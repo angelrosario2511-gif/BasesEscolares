@@ -1,0 +1,109 @@
+
+/* Header */
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+body > #header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(202, 202, 202);
+}
+#header > ul {
+    display: none;
+    padding: 0;
+}
+#header > ul > li > a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+#header > ul > li {
+    list-style: none;
+    padding: .9rem 0;
+    text-align: center;
+}
+#header > p {
+    padding: 0 .5rem;
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+    margin-top: 1.5rem;
+}
+#header > input[type="checkbox"] {
+    display: none;
+}
+#header > label{
+    position: absolute;
+    right: 1rem;
+    padding: 1rem;
+    font-size: xx-large;
+    font-weight: 900;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+#header > label:hover{
+    color: rgb(130, 238, 233);
+}
+
+#bttnMenu:checked ~ ul{
+    display: block;
+}
+#bttnMenu:checked + label{
+    color: rgb(130, 238, 233);
+}
+
+
+/* Main*/
+
+.bttnSubject{
+    width: 100%;
+    height: 22vh;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bttnSubject > p {
+    background-color: rgb(191, 207, 216);
+    width: fit-content;
+    padding: .5em 1em;
+    border-radius: 1em;
+}
+#subjectEsp{
+    background-image: url(src/other/español.png);
+}
+#subjectHL{
+    background-image: url(src/other/historiaLengua.gif);
+    background-position-y: center;
+}
+#subjectMat{
+    background-image: url(src/other/matemáticas.jpg);
+    background-position-y: center;
+}
+#subjectLogi{
+    background-image: url(src/other/filosofía.jpg);
+    background-position: center top;
+}
+
+/* Full Screen*/
+
+@media screen and (min-width: 768px){
+    #bttnMenu:checked ~ ul{
+        display: flex;
+    }
+    #header > ul{
+        display: flex;
+        margin-left: auto;
+    }
+    body > #header{
+        flex-direction: row;
+    }
+    #header > ul > li {
+        padding: 1rem;
+    }
+    #header > label{
+        display: none;
+    }
+}
