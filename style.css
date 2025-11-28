@@ -1,15 +1,25 @@
+/* Variables */
+
+:root{
+    --ElementsColor: rgb(0, 0, 0);
+    --MainColor: rgb(202, 192, 201);
+    --SecondaryColor: rgb(198, 206, 197);
+}
+
+
 
 /* Header */
 
 body{
     margin: 0;
     font-family: sans-serif;
+    background-color: black;
 }
 body > #header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(202, 202, 202);
+    background-color: var(--MainColor);
 }
 #header > ul {
     display: none;
@@ -17,7 +27,7 @@ body > #header {
 }
 #header > ul > li > a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: var(--ElementsColor);
 }
 #header > ul > li {
     list-style: none;
@@ -25,10 +35,10 @@ body > #header {
     text-align: center;
 }
 #header > p {
-    padding: 0 .5rem;
-    color: rgb(0, 0, 0);
+    padding: 1rem .5rem;
+    color: var(--ElementsColor);
     font-size: x-large;
-    margin-top: 1.5rem;
+    margin: 1rem;
 }
 #header > input[type="checkbox"] {
     display: none;
@@ -39,19 +49,19 @@ body > #header {
     padding: 1rem;
     font-size: xx-large;
     font-weight: 900;
-    color: white;
+    color: var(--ElementsColor);
     cursor: pointer;
     user-select: none;
 }
 #header > label:hover{
-    color: rgb(130, 238, 233);
+    color: var(--SecondaryColor)
 }
 
 #bttnMenu:checked ~ ul{
     display: block;
 }
 #bttnMenu:checked + label{
-    color: rgb(130, 238, 233);
+    color: var(--SecondaryColor)
 }
 
 
@@ -59,17 +69,18 @@ body > #header {
 
 .bttnSubject{
     width: 100%;
-    height: 22vh;
     font-size: xx-large;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .bttnSubject > p {
-    background-color: rgb(191, 207, 216);
+    background-color: var(--SecondaryColor);
     width: fit-content;
     padding: .5em 1em;
     border-radius: 1em;
+    color: var(--ElementsColor);
+    text-align: center;
 }
 #subjectEsp{
     background-image: url(src/other/español.png);
@@ -79,12 +90,22 @@ body > #header {
     background-position-y: center;
 }
 #subjectMat{
-    background-image: url(src/other/matemáticas.jpg);
+    background-image: url(src/other/matemáticasA.jpg);
     background-position-y: center;
 }
 #subjectLogi{
-    background-image: url(src/other/filosofía.jpg);
+    background-image: url(src/other/filosofíaC.jpg);
     background-position: center top;
+}
+a:has(.bttnSubject){
+    text-decoration: none;
+}
+
+/*Footer*/
+footer{
+    background-color: var(--SecondaryColor);
+    text-align: end;
+    color: rgba(0, 0, 0, 0.548);
 }
 
 /* Full Screen*/
@@ -105,5 +126,14 @@ body > #header {
     }
     #header > label{
         display: none;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        height: 90vh;
+    }
+    a:has(.bttnSubject){
+        display: grid;
     }
 }
