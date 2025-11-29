@@ -13,7 +13,7 @@
 body{
     margin: 0;
     font-family: sans-serif;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 body > #header {
     display: flex;
@@ -65,7 +65,7 @@ body > #header {
 }
 
 
-/* Main*/
+/* Pantalla Principal*/
 
 .bttnSubject{
     width: 100%;
@@ -149,6 +149,12 @@ a:has(#unidad2){
     background-image: url(src/other/historiaLengua.gif);    
 }
 
+/* Contenidos */
+
+#contenidos #main{
+    display: block;
+}
+
 /* Full Screen*/
 
 @media screen and (min-width: 768px){
@@ -168,7 +174,7 @@ a:has(#unidad2){
     #header > label{
         display: none;
     }
-    main{
+    /*main*/.adaptativo{
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: auto;
