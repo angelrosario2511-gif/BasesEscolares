@@ -150,9 +150,19 @@ a:has(#unidad2){
 }
 
 /* Contenidos */
-
-#contenidos #main{
+#contenidos main{
     display: block;
+    padding: 1rem;
+}
+.sangría{
+    padding-left: 1rem;
+}
+#contenidos h3{
+    font-weight: normal;
+    margin-bottom: -16px;
+}
+aside{
+    display: none;
 }
 
 /* Full Screen*/
@@ -181,6 +191,14 @@ a:has(#unidad2){
         height: 90vh;
     }
     a:has(.bttnSubject){
+        display: grid;
+    }
+    #contenidos aside{
+        display: block;
+        background-color: aquamarine;
+        width: 16vw;
+    }
+    #contenidos{
         display: grid;
     }
 }
