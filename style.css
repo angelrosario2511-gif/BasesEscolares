@@ -1,3 +1,7 @@
+/* Google Fonts */
+
+
+
 /* Variables */
 
 :root{
@@ -152,7 +156,6 @@ a:has(#unidad2){
 /* Contenidos */
 #contenidos main{
     display: block;
-    padding: 1rem;
 }
 .sangría{
     padding-left: 1rem;
@@ -168,6 +171,7 @@ aside{
 /* Full Screen*/
 
 @media screen and (min-width: 768px){
+    /*Header*/
     #bttnMenu:checked ~ ul{
         display: flex;
     }
@@ -184,7 +188,11 @@ aside{
     #header > label{
         display: none;
     }
-    /*main*/.adaptativo{
+
+
+    /*Menús materias*/
+    
+    .adaptativo{
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: auto;
@@ -193,12 +201,28 @@ aside{
     a:has(.bttnSubject){
         display: grid;
     }
+
+    /* Contenidos */
+    #contenidos>div{
+        display: grid;
+        grid-template-columns: 5fr 1fr;
+    }
     #contenidos aside{
         display: block;
-        background-color: aquamarine;
-        width: 16vw;
+        background-color: var(--SecondaryColor);
+        grid-row: span 20;
     }
-    #contenidos{
-        display: grid;
+    #contenidos main{
+        margin: 1.5rem;
+        padding: 1rem 1rem 1rem 2rem;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 1rem;
     }
+    #contenidos>div>img{
+        background-image: url(src/other/español.png);
+        background-repeat: repeat-x;
+        height: 7rem;
+        width: 100%;
+    }
+
 }
