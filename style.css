@@ -124,30 +124,29 @@ a:has(#unidad2){
     background-position: right;
 }
 #español a:has(#unidad1){
-    background-image: url(/src/other/español.png);
-    display: flex;
+    background-image: url(src/other/español.png);
 }
 #español a:has(#unidad2){
-    background-image: url(/src/other/español.png);
+    background-image: url(src/other/español.png);
 }
 #matematicas a:has(#unidad1){
-    background-image: url(/src/other/matemáticasA.jpg);
+    background-image: url(src/other/matemáticasA.jpg);
     display: flex;
 }
 #matematicas a:has(#unidad2){
-    background-image: url(/src/other/matemáticasA.jpg);
+    background-image: url(src/other/matemáticasA.jpg);
 }
 #logica a:has(#unidad1){
-    background-image: url(/src/other/filosofíaC.jpg);
+    background-image: url(src/other/filosofíaC.jpg);
 }
 #logica a:has(#unidad2){
-    background-image: url(/src/other/filosofía.jpg);
+    background-image: url(src/other/filosofía.jpg);
 }
 #hl a:has(#unidad1){
-    background-image: url(/src/other/historiaLengua.gif);
+    background-image: url(src/other/historiaLengua.gif);
 }
 #hl a:has(#unidad2){
-    background-image: url(/src/other/historiaLengua.gif);    
+    background-image: url(src/other/historiaLengua.gif);    
 }
 
 /* Full Screen*/
