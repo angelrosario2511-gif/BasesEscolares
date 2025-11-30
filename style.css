@@ -115,7 +115,7 @@ footer{
 /* Unidades*/
 
 #unidad1>p{    
-    background-color: rgb(211, 163, 206);
+    background-color: rgb(163, 211, 177);
 }
 #unidad2>p{ 
     background-color: rgb(202, 154, 154);
@@ -167,6 +167,16 @@ a:has(#unidad2){
 aside{
     display: none;
 }
+#contenidos>div>img{
+        background-image: url(src/other/español.png);
+        background-repeat: repeat-x;
+        height: 7rem;
+        width: 100%;
+    }
+span{
+    display: block;
+    margin: -16px 0 16px 0;
+}
 
 /* Full Screen*/
 
@@ -217,12 +227,6 @@ aside{
         padding: 1rem 1rem 1rem 2rem;
         border: 1px solid rgb(0, 0, 0);
         border-radius: 1rem;
-    }
-    #contenidos>div>img{
-        background-image: url(src/other/español.png);
-        background-repeat: repeat-x;
-        height: 7rem;
-        width: 100%;
     }
 
 }
